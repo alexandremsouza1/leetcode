@@ -9,6 +9,10 @@ import (
 
 func IsAnagram(s string, t string) bool {
 
+	if len(t) != len(s) {
+		return false
+	}
+
 	countS := make(map[rune]int)
 	countT := make(map[rune]int)
 
